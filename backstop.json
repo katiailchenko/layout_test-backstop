@@ -25,7 +25,7 @@
       "selectors": ["[data-qa-card]"],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0.1,
+      "misMatchThreshold" : 1,
       "requireSameDimensions": true
     },
     {

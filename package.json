@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --config bs-config.js",
+    "start": "http-server ./src -p 3000 -o",
     "test": "rm -rf ./backstop_data/bitmaps_test && backstop test",
-    "approve": "backstop approve"
+    "css:reference": "rm -rf ./backstop_data/bitmaps_reference && backstop reference",
+    "css:approve-screenshots": "backstop approve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "backstopjs": "^3.8.8",
-    "browser-sync": "^2.26.3"
-  }
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {}
 }
