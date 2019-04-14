@@ -1,5 +1,5 @@
 const urls = {
-  development: 'http://host.docker.internal:3000',
+  development: 'http://host.docker.internal:8080',
   travis: 'http://127.0.0.1:8080'
 }
 
