@@ -1,0 +1,18 @@
+{
+  "name": "test-nav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.js",
+    "test": "rm -rf ./backstop_data/bitmaps_test && backstop test",
+    "approve": "backstop approve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backstopjs": "^3.8.8",
+    "browser-sync": "^2.26.3"
+  }
+}
