@@ -1,6 +1,6 @@
 const urls = {
   development: 'http://host.docker.internal:3000',
-  travis: 'http://localhost:3000'
+  travis: 'http://127.0.0.1:3000'
 }
 
 const basicScenario = {
