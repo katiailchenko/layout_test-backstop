@@ -4,5 +4,7 @@ node_js:
 cache: npm
 services:
   - docker
-script: npm run css:test:ci
-before_script: npm run start
+script:
+  - bash start-test-ci.sh
+before_script:
+  - bash start-server.sh
