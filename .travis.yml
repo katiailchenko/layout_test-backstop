@@ -3,4 +3,4 @@ node_js:
 - '11'
 cache: npm
 before_script:
-  - ./start-server.sh
+  - bash start-server.sh

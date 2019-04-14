@@ -1,3 +1,3 @@
 #!/bin/bash
-http-server &
+npm run start &
 sleep 3
