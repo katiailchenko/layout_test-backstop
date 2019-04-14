@@ -8,7 +8,7 @@
     "css:test:ci": "rimraf ./backstop_data/bitmaps_test && backstop test --docker --config=backstopConfigTravis",
     "css:test": "rimraf ./backstop_data/bitmaps_test && backstop test --docker --config=backstopConfigDev",
     "css:reference": "rimraf ./backstop_data/bitmaps_reference && backstop reference --docker --config=backstopConfigDev",
-    "css:approve-screenshots": "backstop approve"
+    "static-content:deploy": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",

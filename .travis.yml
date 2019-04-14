@@ -3,8 +3,15 @@ node_js:
 - '11'
 cache: npm
 services:
-  - docker
+- docker
+before_script:
+  - bash github-before.sh
+  - bash start-server.sh
 script:
   - bash start-test-ci.sh
-before_script:
-  - bash start-server.sh
+after_script:
+  - bash deploy.sh
+
+env:
+  global:
+    secure: QhOzxlh/cvOl+An3b+6+BtXzVti/AHkdDTmQT+e87lQMk7d0w5VKKUfyFb1YRQ1nHMQrI3JxrxHsBIbIK44vDyD4Wk7b90Rrdj8mp10h/eieHySEyVQRukadFz4dc7P5dURvUIvnV03piL8/FVZFSoRBGIMQ4YeAN9fd+jrGJVYUh1KlMS+1/W6nmIRbDV5h4oZK7dngFZNpnpZsOvfuoCUH7MKfzaRmRCE6vumcYeHAVL/g8JrNNXwGdDksYnkkrhp+A9I8ojBvAeDdfDLFOdFgbBGmdHvDgIPzzqiV//r38l7Wzf+0dfLmbjkpulB+AaXYju6gheCmnUGuUi0x/LIoIMZVNBI3LvuuhwuUYVDLgHcdmP+IqTMZ9wglZKXz6is+cZvIxgLblvcQndFpcLUmXNca3+UMO5Mkh/LCZKGy7l5geLvZY7b5hguERNM3K6LekpHgcqbtZlUZO5sFWZYJw00Ainxx3boXVliInZS2J7XQVsfZ9h5FvZLZwAZgR1H//x5lEJ0koZ0YX/5urtd3N2daAKGk2aMN/iEuN1BBfMeTTOnGCXEhgyZHhFTv6cxfg4BLO9dnbAGaxnRfwy6AexOnuDQ83IhXdHDB7/PlvyyddckYDvb5Jb+RCZ32YF+XO9YXF12bjuXIOCYtJ9po9vRZRkozwLJ4TqzW+ig=
