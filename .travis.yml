@@ -2,5 +2,6 @@ language: node_js
 node_js:
 - '11'
 cache: npm
-before_script:
-  - bash start-server.sh
+services:
+  - docker
+script: npm run css:test:ci

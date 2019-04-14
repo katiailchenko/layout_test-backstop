@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./src -p 3000 -o",
-    "test": "rm -rf ./backstop_data/bitmaps_test && backstop test",
-    "css:reference": "rm -rf ./backstop_data/bitmaps_reference && backstop reference",
+    "css:test:ci": "rm -rf ./backstop_data/bitmaps_test && backstop test --docker --config=backstopConfigTravis",
+    "css:test": "rm -rf ./backstop_data/bitmaps_test && backstop test --docker --config=backstopConfigDev",
+    "css:reference": "rm -rf ./backstop_data/bitmaps_reference && backstop reference --docker --config=backstopConfigDev",
     "css:approve-screenshots": "backstop approve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "backstopjs": "^3.8.8",
+    "backstopjs": "^3.8.4",
     "http-server": "^0.11.1"
   },
   "dependencies": {}

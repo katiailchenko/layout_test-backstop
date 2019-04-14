@@ -12,11 +12,11 @@
   "scenarios": [
     {
       "label": "Test",
-      "url": "http://localhost:3000",
+      "url": "http://host.docker.internal:3000",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 0,
+      "delay": 1000,
       "hideSelectors": ["[data-qa-hidden]"],
       "removeSelectors": [],
       "hoverSelector": "",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Test Hover",
-      "url": "http://localhost:3000",
+      "url": "http://host.docker.internal:3000",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": "",
+      "delay": 1000,
       "hideSelectors": ["[data-qa-hidden]"],
       "removeSelectors": [],
       "hoverSelector": "[data-qa-hover]",
@@ -43,7 +43,7 @@
       "selectors": ["[data-qa-card]"],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0.1,
+      "misMatchThreshold" : 1,
       "requireSameDimensions": true
     }
   ],
