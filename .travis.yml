@@ -8,3 +8,6 @@ script:
   - bash start-test-ci.sh
 before_script:
   - bash start-server.sh
+addons:
+  hosts:
+    - travis.dev
