@@ -6,4 +6,5 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
 git remote -v
 echo ${TRAVIS_PULL_REQUEST}
+echo ${TRAVIS_PULL_REQUEST_SLUG}
 echo ${TRAVIS_BRANCH}
