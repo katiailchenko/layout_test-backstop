@@ -5,3 +5,4 @@ cache: npm
 services:
   - docker
 script: npm run css:test:ci
+before_script: npm run start

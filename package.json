@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server ./src -p 3000 -o",
+    "start": "http-server ./src -p 3000",
     "css:test:ci": "rm -rf ./backstop_data/bitmaps_test && backstop test --docker --config=backstopConfigTravis",
     "css:test": "rm -rf ./backstop_data/bitmaps_test && backstop test --docker --config=backstopConfigDev",
     "css:reference": "rm -rf ./backstop_data/bitmaps_reference && backstop reference --docker --config=backstopConfigDev",
