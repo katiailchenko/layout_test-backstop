@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/test_test-card-default_0_data-qa-card_0_tablet_h.png",
-        "test": "../bitmaps_test/20190414-132001/test_test-card-default_0_data-qa-card_0_tablet_h.png",
+        "test": "../bitmaps_test/20190414-155454/test_test-card-default_0_data-qa-card_0_tablet_h.png",
         "selector": "[data-qa-card]",
         "fileName": "test_test-card-default_0_data-qa-card_0_tablet_h.png",
         "label": "test-card-default",
@@ -14,21 +14,14 @@ report({
         "referenceUrl": "",
         "expect": 0,
         "viewportLabel": "tablet_h",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "misMatchPercentage": "0.00"
-        }
+        "error": "Reference file not found /src/backstop_data/bitmaps_reference/test_test-card-default_0_data-qa-card_0_tablet_h.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/test_test-card-hover_0_data-qa-card_0_tablet_h.png",
-        "test": "../bitmaps_test/20190414-132001/test_test-card-hover_0_data-qa-card_0_tablet_h.png",
+        "test": "../bitmaps_test/20190414-155454/test_test-card-hover_0_data-qa-card_0_tablet_h.png",
         "selector": "[data-qa-card]",
         "fileName": "test_test-card-hover_0_data-qa-card_0_tablet_h.png",
         "label": "test-card-hover",
@@ -38,16 +31,9 @@ report({
         "referenceUrl": "",
         "expect": 0,
         "viewportLabel": "tablet_h",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "misMatchPercentage": "0.00"
-        }
+        "error": "Reference file not found /src/backstop_data/bitmaps_reference/test_test-card-hover_0_data-qa-card_0_tablet_h.png"
       },
-      "status": "pass"
+      "status": "fail"
     }
   ],
   "id": "test"

@@ -4,6 +4,6 @@ module.exports = {
   ...config,
   scenarios: config.scenarios.map(scenario => ({
     ...scenario,
-    url: urls.development
+    url: urls.travis
   }))
 }
