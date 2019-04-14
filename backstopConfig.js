@@ -50,7 +50,7 @@ const config = {
     html_report: "backstop_data/html_report",
     ci_report: "backstop_data/ci_report"
   },
-  report: ["browser"],
+  report: ["browser", "CI"],
   engine: "puppeteer",
   engineOptions: {
     args: ["--no-sandbox"]
